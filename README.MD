@@ -101,10 +101,11 @@ python main.py
 
 ### Future Improvements
 - Integrate real government permitting APIs
+- Better prmopts for crew AI agents
 - Add geocoding for accurate jurisdiction mapping  
 - Implement machine learning for better feasibility scoring
 - Add database for permit tracking and historical analysis
-- Include weather data, roof analysis, and utility rate integration
+- Include weather data, roof analysis, and utility rate integration and experiment with many other data sources and APIs
 
 ## API Keys Required
 
