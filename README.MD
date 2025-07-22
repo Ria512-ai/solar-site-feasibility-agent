@@ -2,42 +2,31 @@
 
 AI-powered solar site feasibility assessment using CrewAI agents.
 
-## Quick Start
+## How to Run
 
 1. **Clone and setup**:
 ```bash
 git clone <repo-url>
-cd solar-feasibility-app
-cp .env.example .env
+cd solar-site-feasibility-agent
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+
 ```
 
 2. **Add API keys to .env**:
 ```bash
-NEWS_API_TOKEN=your_news_api_token
-OPENAI_API_KEY=your_openai_api_key
+export NEWS_API_TOKEN="your_token"
+export OPENAI_API_KEY="your_key"
+export OPENAI_MODEL_NAME="gpt-4o-mini"
+
 ```
 
-3. **Run with Docker**:
-```bash
-docker-compose up --build
+3. **Run with python3.10.13 **:
 ```
+python3 main.py
 
-## Usage
-
-### Web API
-- **Health Check**: `GET http://localhost:5000/health`
-- **Assessment**: `POST http://localhost:5000/assess`
-```json
-{
-  "address": "123 Main St, Los Angeles, CA",
-  "system_size": "7kW", 
-  "panel_count": "24"
-}
-```
-
-### CLI
-```bash
-python main.py
 ```
 
 ## Agents Implemented

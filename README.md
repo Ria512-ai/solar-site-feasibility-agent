@@ -1,1 +1,0 @@
-# solar-site-feasibility-agent
